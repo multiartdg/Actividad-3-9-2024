@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Salario</title>
+</head>
+<body>
+    <p>
+        Calcula tu Salario
+    </p>
+    <script>
+        const operacion = prompt("Para el promedio ingresa 1; para el sueldo ingresa 2");
+console.log(operacion);
+
+switch (operacion) {
+    case "1":
+        promedio();
+        break;
+    case "2":
+        tuSueldo();
+        break;
+    default:
+        alert("El número no es correcto");
+        break;
+}
+
+function promedio() {
+    // Implementa la función para calcular el promedio aquí.
+    // Ejemplo:
+    const numero1 = parseFloat(prompt("Ingresa el primer número"));
+    const numero2 = parseFloat(prompt("Ingresa el segundo número"));
+    const promedio = (numero1 + numero2) / 2;
+    alert("El promedio es: " + promedio);
+}
+
+function tuSueldo() {
+    const precioHora = parseFloat(prompt("Ingresa el precio de tus horas"));
+    const horasTrabajadas = parseFloat(prompt("Ingresa las horas trabajadas"));
+
+    const sueldo = precioHora * horasTrabajadas;
+    alert("Tu sueldo este mes es de: " + sueldo + " DOP");
+}
+
+    </script>
+</body>
+</html>
